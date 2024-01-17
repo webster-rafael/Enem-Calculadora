@@ -730,6 +730,14 @@ video {
   padding-top: 1rem;
 }
 
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -810,20 +818,28 @@ video {
 }
 
 @media (min-width: 320px) and (max-width: 500px){
-  .mobile\:top-0{
-    top: 0px;
+  .mobile\:top-6{
+    top: 1.5rem;
+  }
+
+  .mobile\:top-4{
+    top: 1rem;
+  }
+
+  .mobile\:top-5{
+    top: 1.25rem;
+  }
+
+  .mobile\:top-3{
+    top: 0.75rem;
   }
 
   .mobile\:top-2{
     top: 0.5rem;
   }
 
-  .mobile\:top-6{
-    top: 1.5rem;
-  }
-
-  .mobile\:top-10{
-    top: 2.5rem;
+  .mobile\:top-0{
+    top: 0px;
   }
 
   .mobile\:mx-auto{
