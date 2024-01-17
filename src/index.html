@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Enem</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="h-screen overflow-hidden font-roboto">
+    <nav class="w-full flex justify-between text-center items-center py-1 px-4 bg-emerald-800">
+        <div class="pl-4">
+            <img class="w-[50px] rounded-full" src="../img/Enem-logo.png" alt="">
+        </div>
+
+        <div class="flex text-center">
+            <button class="bg-azulEscuro border border-white text-white hover:bg-white hover:text-black font-semibold w-44 h-9 rounded-sm mobile:w-32 mobile:text-xs">Descubra Sua Média</button>
+        </div>
+    </nav>
+    <section class="w-full h-screen px-4 text-white bg-zinc-800 metade-branco">
+        <div class="relative top-4 text-center">
+                <h1 class="font-semibold text-4xl font-roboto mobile:text-2xl">Calcule Sua Média do Enem</h1>
+            </div> 
+        <div class="w-full h-screen flex flex-col justify-center items-center text-center">       
+                <div class="w-4/6 py-10 px-10 flex flex-col items-center bg-azulEscuro mobile:w-5/6 mobile:py-5">
+                    <div class="">
+                        <h2 class="opacity-80">Digite Aqui suas Notas do Enem</h2>
+                    </div>
+                    <div class="w-full flex justify-evenly pt-2 text-black mobile:justify-center mobile:flex-col mobile:mx-auto mobile:items-center">
+                        <label class="flex flex-col text-xs text-white relative" for=""><p class="relative rounded-md top-2 bg-azulEscuro mr-3 mobile:mr-16 mobile:px-1">Linguagens</p>
+                        <input class="w-20 py-2 bg-azulEscuro px-2 text-center font-semibold border-2 rounded-md border-white focus:text-sm focus:bg-white focus:text-black  mobile:mx-auto mobile:w-32" type="text" id="notaLing">
+                    </label>
+                    <label class="flex flex-col text-xs text-white relative" for=""><p class="relative top-2 bg-azulEscuro mr-4 mobile:mr-20 mobile:px-1">Humanas</p>
+                        <input class="w-20 py-2 bg-azulEscuro px-2 text-center border-2 rounded-md border-white focus:text-sm focus:bg-white focus:text-black font-semibold mobile:mx-auto mobile:w-32" type="text" id="notaHuman">
+                    </label>
+                    <label class="flex flex-col text-xs text-white relative" for=""><p class="relative top-2 bg-azulEscuro mr-7 mobile:mr-20 mobile:px-1">Natureza</p>
+                        <input class="w-20 py-2 bg-azulEscuro px-2 text-center border-2 rounded-md border-white focus:text-sm focus:bg-white focus:text-black font-semibold mobile:w-32" type="text" id="notaNat">
+                    </label>
+                    <label class="flex flex-col text-xs text-white relative" for=""><p class="relative top-2 bg-azulEscuro mr-7 mobile:mr-16 mobile:px-1">Matemática</p>
+                        <input class="w-20 py-2 bg-azulEscuro px-2 text-center border-2 rounded-md border-white focus:text-sm focus:bg-white focus:text-black font-semibold mobile:w-32" type="text" id="notaMat">
+                    </label>
+                    <label class="flex flex-col text-xs text-white relative" for=""><p class="relative top-2 bg-azulEscuro mr-7 mobile:mr-20 mobile:px-1">Redação</p>
+                        <input class="w-20 py-2 bg-azulEscuro px-2 text-center border-2 rounded-md border-white focus:text-sm focus:bg-white focus:text-black font-semibold mobile:w-32" type="text" id="notaRedç">
+                    </label>
+                        <div class="pt-4">
+                            <button class="bg-emerald-800 px-4 py-1 border-2 border-white text-white rounded-md font-semibold hover:bg-white hover:text-black mobile:w-48" id="buttonCalc" onclick="Calcular()">Calcular</button>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="w-full flex justify-center pt-4 text-black mobile:pt-1">
+                    <div class="flex items-center text-center justify-center py-2">
+                        <h1 class="text-xl italic font-semibold">Minha Média do Enem é:</h1>
+                    </div>
+
+                    <div class="flex justify-center items-center text-center px-2">
+                        <label class="flex flex-col text-xs text-white relative rounded-lg" for=""><p class="relative top-2 bg-azulEscuro mr-7">Média</p>
+                        <input class="w-24 py-2 bg-zinc-800 border-2 text-white text-center font-semibold border-emerald-800" type="text" id="mediaTot">
+                        </label>
+                    </div>
+                </div>   
+                <footer class="w-full relative top-16 mobile:top-0">
+                    <p class="text-black font-roboto italic text-sm font-semibold opacity-80 py-4">Desenvolvido por Webster Dev &copy; 2024</p>
+                </footer>            
+        </div>
+        
+        
+    </section>
+    
+
+    
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
